@@ -1,0 +1,10 @@
+.cv__section-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  @media (orientation: portrait) {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}

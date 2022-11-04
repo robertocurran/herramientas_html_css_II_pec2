@@ -1,0 +1,10 @@
+.cv__skill-list {
+  display: flex;
+  flex-flow: wrap;
+
+  li {
+    margin-right: 0.8em;
+
+    @include mx-skill-label;
+  }
+}

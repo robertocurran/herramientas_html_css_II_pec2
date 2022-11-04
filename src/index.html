@@ -1,27 +1,399 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>UOC Boilerplate</title>
+    </head>
+    <body>
+        <div class="cv">
+            <div class="cv__section cv__header">
+                <div>
+                    <h1>Roberto Curran García</h1>
+                    <h2>Software Engineer</h2>
+                </div>
+
+                <img src="assets/images/facepic.jpg"
+                alt="Picture of Roberto Curran García" />
+            </div>
+
+            <div class="cv__section">
+                <div class="cv__section-title">
+                    <h2>Personal information</h2>
+                    <i class="cv__icon fa-solid fa-circle-info"></i>
+                </div>
+
+                <ul>
+                    <li>Date of birth: 30/01/1990</li>
+                    <li>Citizenship: Spanish</li>
+                    <li>
+                        <a href="https://github.com/robertocurran">
+                            <img
+                                class="cv__logo"
+                                src="./assets/images/github_logo.png"
+                                alt="Github logo"
+                            />Github</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://uk.linkedin.com/in/roberto-curran-garcía-a68990b7"
+                        >
+                            <img
+                                class="cv__logo"
+                                src="./assets/images/linkedin_logo.png"
+                                alt="Linkedin logo"
+                            />Linkedin</a
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cv__section">
+                <div class="cv__section-title">
+                    <h2>Education</h2>
+                    <i class="cv__icon fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div>
+                    <div>
+                        <h3>
+                            <strong>(Ongoing)</strong> Master's degree in
+                            Websites and Web applications development
+                        </h3>
+                        <p>
+                            <a href="https://www.uoc.edu/"
+                                >Open University of Catalonia</a
+                            >, Started in
+                            <time datetime="2021-09"> September 2021</time>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Bachelor's degree in Computer Science</h3>
+                        <p>
+                            Obtained in the
+                            <a href="https://www.uma.es/"
+                                >University of Málaga</a
+                            >, Spain from
+                            <time datetime="2010-09"> September 2010</time> to
+                            <time datetime="2015-07"> July 2015</time>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv__section">
+                <div class="cv__section-title">
+                    <h2>Languages</h2>
+                    <i class="cv__icon fa-solid fa-language"></i>
+                </div>
+
+                <ul>
+                    <li>Spanish: Native speaker level</li>
+                    <li>English: Advanced professional level</li>
+                </ul>
+            </div>
+
+            <div class="cv__section">
+                <div class="cv__section-title">
+                    <h2>Experience</h2>
+                    <i class="cv__icon fa-solid fa-briefcase"></i>
+                </div>
+                <div>
+                    <div class=.cv__job-experience">
+                        <h3>Amadeus IT Group (As consultant of Wiley Edge)</h3>
+                        <p>Role: Software Engineer</p>
+                        <p>
+                            <time datetime="2021-05"> May 2021</time> -
+                            <time>Present</time>
+                        </p>
+
+                        <div class="cv__job-project">
+                            <h4>
+                                Departure Control System, Customer Management
+                            </h4>
+                            <p>
+                                The latest project I joined involves the
+                                maintenance, design and implementation of new
+                                features in the customer management linux
+                                backend. <br />Special focus on baggage
+                                management libraries updating and refactoring as
+                                well as regressions maintenance and sign offs.
+                            </p>
+                            <ul class="cv__skill-list">
+                                <li>C++</li>
+                                <li>Python testing</li>
+                                <li>SQL</li>
+                                <li>Agile Scrum Methodology</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv__job-project">
+                            <h4>Safe Travel</h4>
+                            <p>
+                                Joined an amadeus development team to develop a
+                                safe travel service for airlines and airports to
+                                deal with the travel requirements of every
+                                country with regards of COVID19 tests and
+                                vaccines certifications.
+                            </p>
+                            <ul class="cv__skill-list">
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>Agile Scrum Methodology</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=.cv__job-experience">
+                        <h3>Chenevari Investment Managers (Hedge fund)</h3>
+                        <p>Role: Technology Analyst</p>
+                        <p>
+                            <time datetime="2020-04"> April 2020</time> -
+                            <time datetime="2021-02"> February 2021</time>
+                        </p>
+
+                        <div class="cv__job-project">
+                            <h4>Risk analysis platform</h4>
+                            <p>
+                                As I joined I contributed to the Back end
+                                distributed multithreaded server project by
+                                adding some long needed features in modern C++
+                                and updating Python scripts. I also took
+                                ownership of the Front end side done in in
+                                Javascript with React. I created several of the
+                                requested tools and features that other users
+                                inside the company were requesting for some
+                                time, bringing value to their day to day tasks.
+                                I did also come up with new features that
+                                benefited the user experience overall.
+                            </p>
+                            <ul class="cv__skill-list">
+                                <li>React</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=.cv__job-experience">
+                        <h3>
+                            Imagination Technologies (Semiconductor Industry)
+                        </h3>
+                        <p>Role: Software Design Engineer</p>
+                        <p>
+                            <time datetime="2016-07"> July 2016</time> -
+                            <time datetime="2020-03"> March 2020</time>
+                        </p>
+                        <p>Role: Graduate Software Design Engineer</p>
+                        <p>
+                            <time datetime="2015-08"> August 2015</time> -
+                            <time datetime="2016-07"> July 2016</time>
+                        </p>
+
+                        <div class="cv__job-project">
+                            <h4>RISC V CPU simulator</h4>
+                            <p>
+                                Started this project from scratch with other two
+                                colleagues and in a very small time we managed
+                                to have a running model able to run RISC V
+                                compiled code which was a very satisfactory
+                                moment in my professional life. I had software
+                                architecture responsibilities as I had to come
+                                up with elegant and modern solutions to
+                                describing this new CPU architecture to later
+                                integrate it into our legacy systems.
+                            </p>
+                            <ul class="cv__skill-list">
+                                <li>C++</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv__job-project">
+                            <h4>PowerVR GPU simulator</h4>
+                            <p>
+                                Contributed to the development and mostly
+                                maintenance of the simulator of the PowerVR
+                                graphical processing unit Series 8 taking
+                                ownership off several modules and refactoring
+                                some of them to modern C++ with better software
+                                standards.
+                            </p>
+                            <ul class="cv__skill-list">
+                                <li>C++</li>
+                                <li>System C</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv__job-project">
+                            <h4>Image Signal Processor simulator</h4>
+                            <p>
+                                Joined as a graduate and immediately took
+                                ownership of the creation of several modules of
+                                the pipeline of the PowerVR image signal
+                                processor. This also included testing the system
+                                and collaborating with other teams such as
+                                Research and Hardware.
+                            </p>
+                            <ul class="cv__skill-list">
+                                <li>C++</li>
+                                <li>System C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv__section">
+                <div class="cv__section-title">
+                    <h2>Objectives</h2>
+                    <i class="cv__icon fa-solid fa-flag-checkered"></i>
+                </div>
+
+                <p>
+                    My aim is to work in interesting and challenging software
+                    projects where I can improve and learn new skills. I've been
+                    mainly focusing in C++ and Python sourcecodes but I've been
+                    gravitating towards web development more focused on both
+                    front end and back end development (fullstack) languages and
+                    technologies like JavaScript, TypeScript, React, Angular,
+                    PHP, Laravel and so on.
+                </p>
+            </div>
+
+            <div class="cv__section">
+                <div class="cv__section-title">
+                    <h2>Skill set</h2>
+                    <i class="cv__icon fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <div>
+                    <ul class="cv__skills">
+                        <li>
+                            Programming languages:
+                            <ul class="cv__skill-list">
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>React</li>
+                                <li>Angular</li>
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>SQL</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Version control software:
+                            <span class="cv__skill-label">Git</span> and
+                            <span class="cv__skill-label">Perforce</span>.
+                        </li>
+                        <li>
+                            Experience with
+                            <span class="cv__skill-label">GNU/Linux</span>
+                            systems.
+                            <span class="cv__skill-label">Windows</span>
+                            systems.
+                        </li>
+                        <li>
+                            <span class="cv__skill-label">Image processing</span
+                            >, <span class="cv__skill-label">GPU</span>, and
+                            <span class="cv__skill-label">CPU</span> pipeline
+                            knowledge.
+                        </li>
+                        <li>
+                            <span class="cv__skill-label">FPGA</span>,
+                            <span class="cv__skill-label"
+                                >microcontrollers</span
+                            >
+                            and other platforms designs,
+                            <span class="cv__skill-label">Raspberry Pi</span>
+                            and <span class="cv__skill-label">Arduino</span>.
+                        </li>
+                        <li>
+                            Experience with
+                            <span class="cv__skill-label">Java 3D API</span> and
+                            game engines like
+                            <span class="cv__skill-label">Godot</span> and
+                            <span class="cv__skill-label"
+                                >Game Maker: Studio</span
+                            >. Developed several games for the Ludum Dare
+                            competition.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv__section">
+                <div class="cv__section-title">
+                    <h2>Projects</h2>
+                    <i class="cv__icon fa-solid fa-laptop-code"></i>
+                </div>
+
+                <div>
+                    <div>
+                        <h3>Pilotos F1</h3>
+                        <p>
+                            Project website for HTML and CSS I from my master's
+                            degree course. Website created with parcel and with
+                            a focus on utilizing several plugins and HTML and
+                            CSS features as well as a focus on size and speed
+                            efficiency.
+                        </p>
+                        <p>
+                            <a
+                                href="https://62a658b18945330008103c27--elaborate-quokka-d43d08.netlify.app/"
+                                >Link to Pilotos F1</a
+                            >
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Multitask kernel for Raspberry Pi</h3>
+                        <p>
+                            This was my final project in the bachelors degree.
+                            The objective of this project was to extend an
+                            existing Raspberry Pi bare metal open, source kernel
+                            so it could support multitasking and give a basic
+                            interface to use the GPIO and to an additional
+                            auxiliary board connected to it. Used for lab
+                            excercises in two modules of the Computer Science
+                            bachellor's university.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Remote controlled digger</h3>
+                        <p>
+                            Small digger made with LEGO controlled with a Sony
+                            Play Sation controller via bluetooth to a Raspberry
+                            Pi and an Arduino board. It could move just like a
+                            RC car and it also had a movable digger arm powered
+                            by servomotors. Created in Python and Arduino
+                            Programming Language
+                        </p>
+                    </div>
+                    <div>
+                        <h3>This CV site :)</h3>
+                        <p>
+                            Done with the UOC Boilerplate, Parcel and Sass.
+                            Following the ITCSS and BEM methodologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>

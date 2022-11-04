@@ -1,0 +1,14 @@
+@mixin mx-skill-label {
+  margin-bottom: 0.4em;
+  margin-top: 0.4em;
+  background-color: $colorLabel;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  border-radius: 0.3em;
+  display: inline-flex;
+
+  &:hover {
+    color: $colorFontLight;
+    background-color: $colorPrimary;
+  }
+}

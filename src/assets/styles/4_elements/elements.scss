@@ -1,0 +1,53 @@
+body {
+  background-image: url("../images/bg_skyline_light.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+h2 {
+  font-size: 2vw;
+  padding-bottom: 2.5vh;
+  line-height: 1em;
+
+  @media (orientation: portrait) {
+    font-size: 5vw;
+    padding-bottom: 1.5vh;
+  }
+}
+
+h3 {
+  padding-bottom: 1.5vh;
+}
+
+h4 {
+  color: $colorSecondary;
+}
+
+p {
+  padding-bottom: 1.5vh;
+  font-size: $fontSize;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: $fontSize;
+}
+
+a {
+  color: $colorPrimary;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: $colorSecondary;
+
+  text-decoration: underline;
+}

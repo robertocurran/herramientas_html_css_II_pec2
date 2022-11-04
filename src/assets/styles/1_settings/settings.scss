@@ -1,0 +1,17 @@
+@import "colors";
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url("../fonts/Ubuntu-Bold.ttf");
+}
+
+$font: "Ubuntu";
+
+$fontSize: 1em;

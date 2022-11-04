@@ -4,10 +4,11 @@
  */
 
 /**
- * Import variables
+ * Import settings, variables, tools
  */
 
-@import "variables";
+@import "1_settings/settings";
+@import "2_tools/tools";
 
 /**
  * Import npm dependencies
@@ -23,7 +24,21 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@import "3_generic/generic";
+@import "4_elements/elements";
+@import "5_objects/cv";
+
+@import "6_components/cv__section";
+@import "6_components/cv__section-title";
+@import "6_components/cv__header";
+@import "6_components/cv__logo";
+@import "6_components/cv__icon";
+@import "6_components/cv__skill-list";
+@import "6_components/cv__skill-label";
+@import "6_components/cv__job-experience";
+@import "6_components/cv__job-project";
+
+// @import "7_utilities/";
 
 /**
  * Do NOT include anything else in this file!
