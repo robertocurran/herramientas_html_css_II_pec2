@@ -1,0 +1,14 @@
+.accordion-item {
+  background-color: $colorSemiBackground;
+}
+
+.accordion-button {
+  background-color: $colorSemiBackground;
+  color: $colorSecondary;
+  font-family: $font;
+
+  &:not(.collapsed) {
+    color: $colorBackground;
+    background-color: $colorSecondary;
+  }
+}

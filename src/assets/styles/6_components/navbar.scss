@@ -1,0 +1,57 @@
+.navbar {
+  flex-basis: 100%;
+  width: 100%;
+  background-color: $colorBackground;
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0em;
+  padding-top: 20px;
+
+  @media (orientation: portrait) {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-around;
+  }
+
+  border-bottom: 4px solid $colorPrimary;
+}
+.nav {
+  padding-right: 5em;
+  margin: 0;
+
+  @media (orientation: portrait) {
+    flex-direction: column;
+    padding-right: 0;
+    justify-content: space-around;
+  }
+}
+.nav-item {
+  font-size: 1.8em;
+  display: inline-block;
+  margin: 1em;
+  margin-right: 1.5em;
+  & a {
+    font-family: $fontTitle;
+    text-align: center;
+  }
+
+  @media (orientation: portrait) {
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 0.1em;
+    margin-right: 3em;
+  }
+}
+.navbar__logo {
+  padding-left: 5em;
+  z-index: 99;
+
+  & img {
+    width: 100px;
+    height: 100px;
+  }
+  @media (orientation: portrait) {
+    padding-left: 0;
+  }
+}

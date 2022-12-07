@@ -1,0 +1,15 @@
+.galeria {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.galeria__carrousel-container {
+  //usar vh como truco para calcular mejor
+  width: 80vh;
+}
+
+.carousel {
+  height: 80vh;
+}

@@ -1,0 +1,70 @@
+.banda {
+  margin-top: 3em;
+  margin-left: 20vw;
+  margin-right: 20vw;
+
+  @media (orientation: portrait) {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  margin-bottom: 5em;
+}
+
+.banda__img-container {
+  margin-top: 3em;
+  margin-bottom: 5em;
+  width: 100%;
+
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.banda__img {
+  max-width: 100vw;
+  height: fit-content;
+  max-height: 100%;
+}
+
+.banda__logo {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+
+  & img {
+    height: 30vh;
+  }
+}
+@mixin banda-info-con-titulo {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  & h2 {
+    text-align: center;
+    font-family: $fontTitle;
+  }
+}
+
+.banda__discografia {
+  @include banda-info-con-titulo;
+}
+
+.banda__conciertos {
+  @include banda-info-con-titulo;
+}
+
+.banda__faqs {
+  @include banda-info-con-titulo;
+}
+
+.banda__blockqoute {
+  background-color: $colorSemiBackground;
+  padding: 1em;
+  border: 10px solid $colorSemiBackground;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}

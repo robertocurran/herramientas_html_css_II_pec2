@@ -23,22 +23,20 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
+@import "7_utilities/custom";
 
 @import "3_generic/generic";
 @import "4_elements/elements";
 @import "5_objects/cv";
 
-@import "6_components/cv__section";
-@import "6_components/cv__section-title";
-@import "6_components/cv__header";
-@import "6_components/cv__logo";
-@import "6_components/cv__icon";
-@import "6_components/cv__skill-list";
-@import "6_components/cv__skill-label";
-@import "6_components/cv__job-experience";
-@import "6_components/cv__job-project";
-
-// @import "7_utilities/";
+@import "6_components/grid";
+@import "6_components/navbar";
+@import "6_components/footer";
+@import "6_components/members";
+@import "6_components/card";
+@import "6_components/banda";
+@import "6_components/galeria";
+@import "6_components/accordion";
 
 /**
  * Do NOT include anything else in this file!
